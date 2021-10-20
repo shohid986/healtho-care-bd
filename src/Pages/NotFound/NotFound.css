@@ -1,0 +1,14 @@
+/* .error-banner {
+  background-image: url("../../images/404-page/404-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.go-home-btn {
+  width: 200px;
+  margin: auto;
+}
+
+.error-image img {
+  width: 100%;
+  height: 650px !important;
+}

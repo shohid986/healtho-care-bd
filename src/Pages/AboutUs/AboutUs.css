@@ -1,0 +1,29 @@
+.about-us-banner {
+  background-image: url("https://live.linethemes.com/nanocare/wp-content/uploads/2017/03/photo-1472133530746-ae9b21e91c41.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-style {
+  color: #f26528;
+}
+.regular-text-style {
+  color: #34beb9;
+}
+.proud-header {
+  color: #41294a;
+}
+
+/* start media quarry */
+@media screen and (max-width: 1279px) {
+  .about-offer-flex {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-proud-flex {
+    flex-direction: column;
+  }
+  .about-offer-banner {
+    width: 100%;
+  }
+}
