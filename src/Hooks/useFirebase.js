@@ -77,7 +77,7 @@ const useFirebase = () => {
         .catch(error => {
           setError(error.message);
         })
-        .then(()=> setIsLoading(false));
+        .finally(()=> setIsLoading(false));
       }
 
       const setUserName = () => {
@@ -99,6 +99,7 @@ const useFirebase = () => {
       }
 
       useEffect(()=>{
+        setIsLoading(true)
         onAuthStateChanged(auth, (user) => {
             if (user) {
               setUser(user);
