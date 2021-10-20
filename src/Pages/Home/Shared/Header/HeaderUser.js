@@ -15,7 +15,7 @@ const HeaderUser = () => {
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text className="ms-3">
-                    {user.displayName && <span><span className="text-info">Signed in as: </span> <span className="fw-bold text-white text-decoration-underline">{user.displayName}</span></span>}
+                    {user.email && <span><span className="text-info">Signed in as: </span> <span className="fw-bold text-white text-decoration-underline">{user.displayName}</span></span>}
                 </Navbar.Text>
                 </Navbar.Collapse>
         </>

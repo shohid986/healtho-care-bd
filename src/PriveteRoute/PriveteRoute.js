@@ -4,8 +4,8 @@ import { Redirect, Route } from 'react-router';
 import useFirebase from '../Hooks/useFirebase';
 
 const PriveteRoute = ({children, ...rest}) => {
-  const {user, handleGoogleSign, isLoading} = useFirebase();
-  console.log("from privete route", user, handleGoogleSign)
+  const {user, isLoading} = useFirebase();
+  console.log("from privete route", user)
   if(isLoading){
     return <Spinner animation="border" variant="primary" />
 }

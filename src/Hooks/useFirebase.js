@@ -1,10 +1,12 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, signOut, onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
+import { useHistory, useLocation } from "react-router";
 import initializeAuthentication from "../Firebase/Firebase.init";
 
 
 initializeAuthentication();
 const googleProvider = new GoogleAuthProvider();
+    
 const useFirebase = () => {
     const auth = getAuth();
     const [name, setName] = useState('');

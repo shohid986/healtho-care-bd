@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import './AboutUs.css';
 
 const AboutUs = () => {
@@ -31,6 +32,21 @@ const AboutUs = () => {
                             <p>In 2010, the purchase and integration of Nationwide Health & Aged Care Services represented a major milestone in our growth as specialist cleaning and laundry services bolstered our business portfolio.</p>
                             <p>At around the same time, NanoCare partnered with the US-based Healthcare at Home.  In 2013, NanoCare acquired the business. This nurse-led service has provided a safe, high-quality alternative to hospital care for people with cancer and chronic disease.</p>
                             <p>Today, we are proud to continue our work as a wholly-owned, not-for-profit subsidiary of MSL</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="about-contact opacity-75 text-white text-center py-5">
+                    <div className="container">
+                        <h1 className="fw-normal my-5">We do whatever it takes to bring <br /> you peace of mind</h1>
+                        <div className="d-flex justify-content-center pb-5">
+                            <div className="me-4"><Button className="fs-5 px-4 py-3 callback-btn border border-2">REQUEST A CALLBACK</Button></div>
+                            <div className="d-flex ms-4 contact-info">
+                                <i class="fab fa-whatsapp fs-1"></i>
+                                <div>
+                                    <p className="mb-0">24/7 service available</p>
+                                    <p className="fs-4">01 800 688 8688</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
